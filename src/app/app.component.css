@@ -1,8 +1,17 @@
 #map {
-    height: 500px;
-    width: 100%;
-    top: 60px;
+  top: 60px;
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
    }
+.mapa{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
    :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;

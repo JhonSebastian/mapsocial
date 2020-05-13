@@ -9,35 +9,27 @@ import MarkerClusterer from '@google/markerclusterer';
 export class AppComponent implements AfterViewInit {
   @ViewChild("mapContainer", { static: false }) gmap: ElementRef;
   map: google.maps.Map;
-  lat = -32.563910;
-  lng = -147.154312;
+  lat = 4.1420002;
+  lng = -73.6266403;
   labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   markers = []
 
   locations = [
-    {lat: -31.563910, lng: 147.154312},
-    {lat: -33.718234, lng: 150.363181},
-    {lat: -33.727111, lng: 150.371124},
-    {lat: -33.848588, lng: 151.209834},
-    {lat: -33.851702, lng: 151.216968},
-    {lat: -34.671264, lng: 150.863657},
-    {lat: -35.304724, lng: 148.662905},
-    {lat: -36.817685, lng: 175.699196},
-    {lat: -36.828611, lng: 175.790222},
-    {lat: -37.750000, lng: 145.116667},
-    {lat: -37.759859, lng: 145.128708},
-    {lat: -37.765015, lng: 145.133858},
-    {lat: -37.770104, lng: 145.143299},
-    {lat: -37.773700, lng: 145.145187},
-    {lat: -37.774785, lng: 145.137978},
-    {lat: -37.819616, lng: 144.968119},
-    {lat: -38.330766, lng: 144.695692},
-    {lat: -39.927193, lng: 175.053218},
-    {lat: -41.330162, lng: 174.865694},
-    {lat: -42.734358, lng: 147.439506},
-    {lat: -42.734358, lng: 147.501315},
-    {lat: -42.735258, lng: 147.438000},
-    {lat: -43.999792, lng: 170.463352}
+
+    {lat: 4.128208, lng: -73.638240},
+    {lat: 4.129567, lng: -73.640209},
+    {lat: 4.134222, lng: -73.637902},
+    {lat: 4.147267, lng: -73.638598},
+    {lat: 4.145922, lng: -73.631567},
+    {lat: 4.114920, lng: -73.649543},
+    {lat: 4.089117, lng: -73.669685},
+    {lat: 4.117119, lng: -73.625030},
+    {lat: 4.154574, lng: -73.629466},
+    {lat: 4.180581, lng: -73.611462},
+    {lat: 4.159213, lng: -73.645176},
+    {lat: 4.137879, lng: -73.648751},
+    {lat: 4.152132, lng: -73.636287},
+
   ]
     
 
@@ -46,7 +38,7 @@ export class AppComponent implements AfterViewInit {
 
   mapOptions: google.maps.MapOptions = {
     center: this.coordinates,
-    zoom: 3
+    zoom: 12
   };
 
   //Default Marker
